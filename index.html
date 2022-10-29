@@ -8,13 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrap-form d-flex-colum">
+    <div id="app" class="wrap-form d-flex-colum">
         <label for="">Goal</label>
-        <input type="text" id="inputElement" name="inputElement">
-        <button type="submit">Add Goal</button>
-
-        <ul class="response d-flex-colum"></ul>
+        <input type="text" id="goal" v-model="enteredValue">
+        <button v-on:click="addGoal">Add Goal</button>
+        <ul class="response d-flex-colum">
+            <li v-for="goal in goals">{{ goal }}</li>
+        </ul>
     </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
