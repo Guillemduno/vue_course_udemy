@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    border-box:box-sizing;
+}
+body{
+    font-family: Arial;
+}
+
+.d-flex-colum{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+
+.wrap-form{
+    margin:2em auto;
+    max-width: 50%;
+    min-width: 450px;
+    padding:1em;
+    border-radius: 4px;
+    border:1px solid grey;
+}
+
+.response{
+    margin-top: 2em;
+}
+
+.response li{
+    list-style-type:none;
+    border-radius: 4px;
+    border:1px solid grey;
+    padding:1em;
+    margin-left: -40px;
+}
+
+button{
+    height:35px;
+    max-width:100px;
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+label{
+    font-weight: bold;
+}
