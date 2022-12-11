@@ -12,10 +12,10 @@ const app = Vue.createApp({
         showAlert(){
             alert(this.msg);
         },
-        getName(){
+        getName(event){
             return this.name = event.target.value;
         },
-        getInputName(){
+        getInputName(event){
             return this.inputName = event.target.value;
         },
         getFinalName(){
